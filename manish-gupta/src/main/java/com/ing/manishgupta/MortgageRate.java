@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class MortgageRate {
 
-	int maturityPeriod;
-	double interestRate;
-	Date lastUpdate;
+	private int maturityPeriod;
+	private double interestRate;
+	private Date lastUpdate;
 	
 	public MortgageRate(int maturityPeriod,double interestRate,Date lastUpdate) {
 		this.maturityPeriod=maturityPeriod;
@@ -31,6 +31,4 @@ public class MortgageRate {
 	public void setLastUpdate(Date lastUpdate) {
 		this.lastUpdate = lastUpdate;
 	}
-	
-	
 }

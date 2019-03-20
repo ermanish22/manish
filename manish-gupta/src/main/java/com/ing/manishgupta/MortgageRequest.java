@@ -2,10 +2,10 @@ package com.ing.manishgupta;
 
 public class MortgageRequest {
 
-	double income;
-	int maturityPeriod;
-	double loanValue;
-	double homeValue;
+	private double income;
+	private int maturityPeriod;
+	private double loanValue;
+	private double homeValue;
 	public double getIncome() {
 		return income;
 	}

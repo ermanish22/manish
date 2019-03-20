@@ -1,9 +1,17 @@
 package com.ing.manishgupta;
 
 public class MortgageResponse {
-	boolean isFeasible;
-	double monthlyCost;
+	private boolean isFeasible;
+	private double monthlyCost;
 
+	public MortgageResponse() {
+		// TODO Auto-generated constructor stub
+	} 
+	public MortgageResponse(boolean isFeasible,double monthlyCost) {
+		this.isFeasible=isFeasible;
+		this.monthlyCost=monthlyCost;
+	}
+	
 	public boolean isFeasible() {
 		return isFeasible;
 	}
