@@ -37,22 +37,6 @@ public class MortgageServiceExceptionHandler extends ResponseEntityExceptionHand
         return new ResponseEntity<>(errorMessage, new HttpHeaders(), HttpStatus.BAD_REQUEST);
     }
 
-    /*@ExceptionHandler(CoffeeHouseInternalException.class)
-    public final ResponseEntity<ErrorMessage> internalExceptionHandler(CoffeeHouseInternalException coffeeHouseInternalException) {
-        ErrorMessage errorMessage = new ErrorMessage(coffeeHouseInternalException.getMessage(),
-                "We Apologise for this. Kindly contact Support at <+++>");
-
-        return new ResponseEntity<>(errorMessage, new HttpHeaders(), HttpStatus.BAD_REQUEST);
-    }
-
-    @ExceptionHandler(CoffeeHouseDAOException.class)
-    public final ResponseEntity<ErrorMessage> daoExceptionHandler(CoffeeHouseDAOException coffeeHouseDAOException) {
-        ErrorMessage errorMessage = new ErrorMessage(coffeeHouseDAOException.getMessage(),
-                "Inernal Server Error while retrieveing Data, Contact Support at <+++>");
-
-        return new ResponseEntity<>(errorMessage, new HttpHeaders(), HttpStatus.INTERNAL_SERVER_ERROR);
-    }
-*/
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<ErrorMessage> defaultExceptionHandler(Exception exception) {
         ErrorMessage errorMessage = new ErrorMessage(exception.getMessage(),
