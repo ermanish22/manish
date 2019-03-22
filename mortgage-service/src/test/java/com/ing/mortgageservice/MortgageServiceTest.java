@@ -1,8 +1,11 @@
-package com.ing.manishgupta;
+package com.ing.mortgageservice;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.ing.mortgageservice.model.MortgageResponse;
+import com.ing.mortgageservice.service.MortgageService;
 
 
 public class MortgageServiceTest {

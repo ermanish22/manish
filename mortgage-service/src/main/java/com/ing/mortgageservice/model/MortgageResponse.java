@@ -1,4 +1,4 @@
-package com.ing.manishgupta;
+package com.ing.mortgageservice.model;
 
 public class MortgageResponse {
 	private boolean isFeasible;

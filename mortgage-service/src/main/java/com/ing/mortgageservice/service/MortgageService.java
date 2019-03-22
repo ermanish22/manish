@@ -1,16 +1,24 @@
-package com.ing.manishgupta;
+package com.ing.mortgageservice.service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import com.ing.mortgageservice.model.MortgageRate;
+import com.ing.mortgageservice.model.MortgageResponse;
 
 @Component
 public class MortgageService {
 	
+	private Logger logger = LoggerFactory.getLogger(MortgageService.class);
+	
 	private List<MortgageRate> mortgageRates;
+	
 	
 	public MortgageResponse mortgageRequestEligibilityCheck(double loanValue, double income, int maturityPeriod, double homeValue) {
 		MortgageResponse mortageResponse=new MortgageResponse();
@@ -21,6 +29,7 @@ public class MortgageService {
 		else {
 			mortageResponse.setFeasible(false);
 			mortageResponse.setMonthlyCost(0);
+			logger.info("mortgage request is not feasible");
 		}
 		return mortageResponse;
 	}

@@ -1,12 +1,13 @@
-package com.ing.manishgupta;
+package com.ing.mortgageservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ManishGuptaApplication {
-	
+public class MortgageServiceApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(ManishGuptaApplication.class, args);
+		SpringApplication.run(MortgageServiceApplication.class, args);
 	}
+
 }
